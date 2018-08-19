@@ -1,7 +1,10 @@
 package commands
 
 import (
+	"fmt"
+	"github.com/awssh/config"
 	"github.com/spf13/cobra"
+	"os"
 )
 
 func init() {
@@ -16,6 +19,6 @@ var versionCmd = &cobra.Command{
 }
 
 func printVersion(*cobra.Command, []string) {
-	//fmt.Fprint(os.Stderr, config.AWLESS_ASCII_LOGO)
-	//fmt.Println(config.CurrentBuildInfo)
+	fmt.Fprint(os.Stderr, config.AwsshAsciiLogo)
+	fmt.Println(config.CurrentBuildInfo)
 }
