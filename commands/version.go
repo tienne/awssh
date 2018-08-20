@@ -2,8 +2,8 @@ package commands
 
 import (
 	"fmt"
-	"github.com/awssh/config"
 	"github.com/spf13/cobra"
+	"github.com/tienne/awssh/config"
 	"os"
 )
 

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/awssh/commands"
+import "github.com/tienne/awssh/commands"
 
 func main() {
 	commands.RootCmd.Execute()
