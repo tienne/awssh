@@ -25,9 +25,24 @@
   revision = "9a97c102cda95a86cec2345a6f09f55a939babf5"
   version = "v1.0.2"
 
+[[projects]]
+  branch = "master"
+  digest = "1:deaf440cf8cbeccd9b7f546db3c5dc73d608b14de8f593c61127e89ad043c2ba"
+  name = "github.com/tienne/awssh"
+  packages = [
+    "commands",
+    "config",
+  ]
+  pruneopts = "UT"
+  revision = "dbcb4c00b03a3e6025d07921a3ffd244ed6988e3"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/spf13/cobra"]
+  input-imports = [
+    "github.com/spf13/cobra",
+    "github.com/tienne/awssh/commands",
+    "github.com/tienne/awssh/config",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
