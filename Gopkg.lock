@@ -2,6 +2,29 @@
 
 
 [[projects]]
+  branch = "master"
+  digest = "1:54aba8c49aab992d42c3487b23e429eb1975b92494f20cc1ffabff783493f90a"
+  name = "github.com/golang/leveldb"
+  packages = [
+    ".",
+    "crc",
+    "db",
+    "memdb",
+    "record",
+    "table",
+  ]
+  pruneopts = "UT"
+  revision = "259d9253d71996b7778a3efb4144fe4892342b18"
+
+[[projects]]
+  branch = "master"
+  digest = "1:4a0c6bb4805508a6287675fac876be2ac1182539ca8a32468d8128882e9d5009"
+  name = "github.com/golang/snappy"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
+
+[[projects]]
   digest = "1:870d441fe217b8e689d7949fef6e43efbc787e50f200cb1e70dbca9204a1d6be"
   name = "github.com/inconshreveable/mousetrap"
   packages = ["."]
@@ -25,24 +48,12 @@
   revision = "9a97c102cda95a86cec2345a6f09f55a939babf5"
   version = "v1.0.2"
 
-[[projects]]
-  branch = "master"
-  digest = "1:deaf440cf8cbeccd9b7f546db3c5dc73d608b14de8f593c61127e89ad043c2ba"
-  name = "github.com/tienne/awssh"
-  packages = [
-    "commands",
-    "config",
-  ]
-  pruneopts = "UT"
-  revision = "dbcb4c00b03a3e6025d07921a3ffd244ed6988e3"
-
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/golang/leveldb",
     "github.com/spf13/cobra",
-    "github.com/tienne/awssh/commands",
-    "github.com/tienne/awssh/config",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

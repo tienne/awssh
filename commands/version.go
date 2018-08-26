@@ -14,11 +14,10 @@ func init() {
 var versionCmd = &cobra.Command{
 	Use:   "version",
 	Short: "Show awssh version",
-
-	Run: printVersion,
+	Run:   printVersion,
 }
 
 func printVersion(*cobra.Command, []string) {
-	fmt.Fprint(os.Stderr, config.AwsshAsciiLogo)
+	fmt.Fprint(os.Stderr, config.AsciiLogo)
 	fmt.Println(config.CurrentBuildInfo)
 }
